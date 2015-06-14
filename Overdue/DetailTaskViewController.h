@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailTaskViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UILabel *detailLabel;
+- (IBAction)editBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 
 @end

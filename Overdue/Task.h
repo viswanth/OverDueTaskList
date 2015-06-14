@@ -10,4 +10,11 @@
 
 @interface Task : NSObject
 
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic) NSDate *date;
+@property (nonatomic) BOOL isCompleted;
+
+-(id)initWithData:(NSDictionary *)data;
+
 @end
